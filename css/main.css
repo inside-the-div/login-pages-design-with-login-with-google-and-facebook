@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+/* 
+body background rgb(205, 117, 10)
+content background rgb(255, 255, 255)
+content box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
+                0 5px 5px 0 rgb(0, 0, 0, 0.24)
+
+h2 border color #cd5907
+input box icon color rgba(94, 88, 88, 0.7)
+sign in and sign up button background color #cd5907
+sign in sign up hover background color #f63e0b
+
+google button background rgb(0, 128, 0, .8);
+facebook button backgroun rgb(12, 12, 139, .8)
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+body{
+    height: 100vh;
+    background: rgb(205, 117, 10);
+}
+
+button{
+    padding: 10px 20px;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.content{
+    width: 400px;
+    background: rgb(255, 255, 255);
+    box-shadow:  0 0 20px rgb(0, 0, 0, 0.2), 
+                0 5px 5px 0 rgb(0, 0, 0, 0.24);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+}
+
+form h2{
+    text-align: center;
+    border-bottom: 2px solid #cd5907;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.input-bx{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-bx input{
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    border-bottom:  1px solid black;
+    padding: 10px 0px 10px 25px;
+}
+
+.input-bx i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: rgba(94, 88, 88, 0.7);
+    transition: .5s;
+}
+
+.input-bx input:focus ~ i,
+.input-bx input:valid ~ i{
+    color: rgba(94, 88, 88);
+}
+
+.input-bx p{
+    position: absolute;
+    padding: 5px 0px;
+    color: gray;
+    text-transform: capitalize;
+    right: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.input-bx p:hover{
+    color: blue;
+}
+
+.option-text{
+    position: relative;
+}
+
+.option-text hr{
+    height: 2px;
+    background: #cd5907;
+}
+
+.option-text p{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: -9px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #ffffff;
+    padding: 0px 5px;
+}
+
+.btn-google,
+.btn-facebook{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    transition: .5s;
+}
+
+.btn-google{
+    background: rgb(0, 128, 0, .8);
+}
+
+.btn-google:hover{
+    background: rgb(0, 128, 0);
+}
+
+.btn-facebook{
+    background: rgb(12, 12, 139, .8);
+}
+
+.btn-facebook:hover{
+    background: rgb(12, 12, 139);
+}
+
+.btn-signin,
+.btn-signup{
+    width: 100%;
+    background: #cd5907;
+    transition: .5s;
+}
+
+.btn-signin:hover,
+.btn-signup:hover{
+    background: #f63e0b;
+}
+.message{
+    display: block;
+    text-align: center;
+}
+.message a{
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: .5s;
+}
+
+.message a:hover{
+    color: blue;
+}
+
+.signup-form{
+    display: none;
+}
